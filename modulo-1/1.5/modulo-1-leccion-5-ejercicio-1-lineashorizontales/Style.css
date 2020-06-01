@@ -1,0 +1,13 @@
+.list2 {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 6px;
+}
+
+/* .item {
+  box-sizing: border-box;
+  width: 80px;
+  height: 25px;
+  text-decoration: underline;
+} */

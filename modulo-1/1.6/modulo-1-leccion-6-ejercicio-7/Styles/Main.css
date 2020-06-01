@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+}
+
+@media all and (min-width: 0px) {
+  .body {
+    background-color: red;
+  }
+}
+@media all and (max-width: 480px) {
+  .body {
+    background-color: red;
+  }
+}
+@media all and (min-width: 481px) {
+  .body {
+    background-color: yellow;
+  }
+}
+/* @media all and (max-width: 767px) {
+  .body {
+    background-color: yellow;
+  }
+} */
+@media all and (min-width: 768px) {
+  .body {
+    background-color: green;
+  }
+}

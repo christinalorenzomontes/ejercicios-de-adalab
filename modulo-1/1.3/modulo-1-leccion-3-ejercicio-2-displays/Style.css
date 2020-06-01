@@ -1,0 +1,16 @@
+
+
+span,
+p {
+  background-color: #A0C5E9;
+}
+
+.info {
+  background-color: transparent;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}
