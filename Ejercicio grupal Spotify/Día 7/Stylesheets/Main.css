@@ -122,10 +122,43 @@ html {
   height: 50vh;
 }
 
+.title {
+  font-size: 3rem;
+}
+
+.title span {
+  display: block;
+}
+
+.button {
+  background-color: var(--secondary-color);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  min-width: 200px;
+  -webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -ms-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+}
+
 /* OPTIONS */
 
 .options {
   text-align: center;
+}
+
+.secondary-title {
+  font-size: 2rem;
 }
 
 .options-items {
@@ -200,7 +233,7 @@ html {
     background-size: 50%;
     animation-name: intro;
     animation-duration: 3s;
-    animation-iteration-count: 1s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
   }
 
@@ -208,8 +241,9 @@ html {
     from {
       background-size: 60%;
     }
+
     to {
-      background: 50%;
+      background-size: 50%;
     }
   }
 
@@ -225,7 +259,12 @@ html {
 
   .footer-menu li:last-child {
     display: inline;
-    width: auto;
+  }
+}
+
+@media all and (min-width: 768px) and (orientation: portrait) {
+  .hero .wrapper {
+    background-position: right bottom;
   }
 }
 
