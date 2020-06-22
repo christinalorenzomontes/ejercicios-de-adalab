@@ -1,4 +1,4 @@
-const titleElement = document.querySelector(".selection");
-const passwordElement = document.querySelector(".asterik2");
-titleElement.innerHTML =
-  titleElement.innerHTML + " " + passwordElement.innerHTML;
+const titleElement = document.querySelector(".container");
+const content =
+  "<h1>Lorem Ipsum</h1><img src='http://via.placeholder.com/350x150' /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>";
+titleElement.innerHTML = content;
