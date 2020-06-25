@@ -22,7 +22,7 @@ console.log(adalaber1["occupation"]);
 const adalaber2 = {
   name: "Rocío",
   age: 31,
-  ocuppation: "actriz",
+  occupation: "actriz",
 };
 
 // Muestra en la consola 'Rocío, 31, actriz'
