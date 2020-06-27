@@ -1,30 +1,28 @@
 "use strict";
 //Vamos a crear un objeto que sea una cesta de peras, que debe tener varias propiedades y varios métodos:
-const cart = {
-  max: 4,
-  min: 0,
-  actual: 6,
-  initial: 2,
-  addPear: function () {
-    if (this.actual >= this.max) {
-      this.actual = this.max;
-    } else {
-      this.actual += 1;
-    }
+
+let cartPears = {
+  numMaxPears: 12,
+  numMinPeras: 2,
+  currentNumOfPears: 8,
+  initialNumOfPears: 0,
+  add: function () {
+    this.currentNumOfPears = this.currentNumOfPears + 1;
+    //this.currentNumOfPears++;
   },
-  removePear: function () {
-    if (this.actual <= this.min) {
-      this.actual = this.min;
-    } else {
-      this.actual -= 1;
-    }
+  remove: function () {
+    this.currentNumOfPears = this.currentNumOfPears - 1;
+    // this.currentNumOfPears--;
   },
-  reset: function () {
-    this.actual = this.initial;
-  },
+  resetCart: function () {
+    this.currentNumOfPears = this.initialNumOfPears;
+  -},
 };
 
-cart.removePear();
-cart.reset();
-
-//No entiendo el ejercicio, pedir explicación.
+// console.log(cart.Pears.currentNumOfPears);
+cartPears.add();
+console.log(cartPears.currentNumOfPears);
+cartPears.remove();
+console.log(cartPears.currentNumOfPears);
+cartPears.resetCart();
+console.log(cartPears.currentNumOfPears);
