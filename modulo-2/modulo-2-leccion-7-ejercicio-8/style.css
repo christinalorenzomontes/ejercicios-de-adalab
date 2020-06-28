@@ -1,0 +1,10 @@
+.button {
+  background-color: aquamarine;
+  width: 150px;
+  border-radius: 22.5px;
+}
+
+.alert {
+  background-color: red;
+  color: white;
+}
