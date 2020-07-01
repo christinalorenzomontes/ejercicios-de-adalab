@@ -1,6 +1,6 @@
 "use strict";
 
-const movies = ["Laberrinto de pasiones", "Moulin Rouge", "The leftovers"];
+const movies = ["Laberinto de pasiones", "Moulin Rouge", "The leftovers"];
 
 console.log(movies);
 
