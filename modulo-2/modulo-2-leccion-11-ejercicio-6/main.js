@@ -7,13 +7,19 @@ Cada vez que la usuaria escriba su nombre (keyUp) tenemos que pintar el valor en
 Al recargar la página tenemos que consultar localStorage y, si hay algún nombre guardado, rellenar el input y el párrafo.*/
 // 1.1 Crear constante que hace referencia al input
 const username = document.querySelector(".name");
+const usersurname = document.querySelector(".surname");
 //1.2 Añadirle el eventlistener
-username.addEventListener("keyup", function () {
+document.addEventListener("keyup", function () {
   //1.3 Vamos a pintar en el HTML
   const papa = document.querySelector(".paragraph");
-  papa.innerHTML = username.value;
+  papa.innerHTML = username.value + " " + usersurname.value;
 
-  //1.4 Guardar en el localstorage
-  localStorage.setItem("name", username.value);
+  //1.4 Creamos objeto con los datos
+  const userInfo = {
+    name: username.value,
+    surname: usersurname.value,
+  };
+  //1.5 Guardar en el localstorage haciendo stringify (pasar el objeto a string)
+  localStorage.setItem("userInfo", JSON.stringify(userInfo));
   console.log(papa);
 });
