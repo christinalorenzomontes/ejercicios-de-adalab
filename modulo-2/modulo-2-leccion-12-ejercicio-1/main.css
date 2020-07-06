@@ -1,0 +1,13 @@
+.button {
+  background: #fc0;
+  height: 30px;
+  border-radius: 20px;
+  width: 60px;
+  font-weight: bold;
+}
+.character {
+  background-color: lightcoral;
+}
+.list {
+  font-weight: bold;
+}
