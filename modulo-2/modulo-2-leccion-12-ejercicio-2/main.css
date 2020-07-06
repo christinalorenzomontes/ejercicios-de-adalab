@@ -1,0 +1,11 @@
+.container {
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  width: 350px;
+}
