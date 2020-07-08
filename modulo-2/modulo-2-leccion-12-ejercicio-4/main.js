@@ -9,9 +9,9 @@ const paragraphs = document.querySelectorAll("p");
 // Con un for of recorremos cada elemento del array
 for (const paragraph of paragraphs) {
   // Creamos constante que es la propiedad del tamaño (offsetHeight) del párrafo
-  const offsetHeight = paragraph.offsetHeight;
-  console.log(offsetHeight);
+  const paragraphHeight = paragraph.offsetHeight;
+  console.log(paragraphHeight);
   // // Modificamos el atributo height del párrafo para que sea un tercio del offsetHeight del mismo (RECUERDA que height espera una expresión tipo "200px", con lo que no valdría con sólo poner pHeight, sino que hay que añadirle el px!!)
-  // paragraph.style.height = `${offsetHeight / 3}px`;
-  // console.log(offsetHeight);
+  // paragraph.style.height = `${paragraphHeight / 3}px`;
+  // console.log(paragraphHeight);
 }
