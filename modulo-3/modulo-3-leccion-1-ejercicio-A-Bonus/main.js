@@ -6,20 +6,25 @@
 //Un método para calcular el área (area()) del cuadrado (elevar al cuadrado el lado)
 //Los métodos recibirán la longitud del lado (side) como parámetro.
 //Calcularemos y mostraremos el perímetro y el área de un cuadrado de 9 de lado.
-
-class Square {
-  perimeter(side) {
-    return side * 4;
+class Dog {
+  constructor(name) {
+    this.name = name;
   }
-  area(side) {
-    return side * side;
+
+  bark() {
+    console.log("Woof, woof!");
+  }
+
+  reactToCall(shout) {
+    if (shout.includes(this.name)) {
+      console.log(`${this.name} wags its tail, happily.`);
+    } else {
+      this.bark();
+    }
   }
 }
 
-const mySquare = new Square();
+const laika = new Dog("Laika");
 
-let squareSide = 9;
-console.log(
-  `El cuadrado tiene un perimetro de ${mySquare.perimeter(squareSide)}cm`
-);
-console.log(`El cuadrado tiene un área de ${mySquare.area(squareSide)}cm2`);
+laika.reactToCall("Hey, Laika!"); // 'Laika wags its tail, happily.'
+laika.reactToCall("Hey, Hachiko!"); // 'Woof, woof!'
